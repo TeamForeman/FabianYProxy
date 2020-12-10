@@ -11,7 +11,8 @@
     "start": "node server",
     "start:pm2": "pm2 start server --name proxy",
     "stop:pm2": "pm2 stop proxy",
-    "start:dev": "nodemon server"
+    "start:dev": "nodemon server",
+    "stressTest": "k6 run stressTest.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.6",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "newrelic": "^7.0.2"
   },
   "devDependencies": {
     "eslint": "^7.13.0",
@@ -29,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "k6": "0.0.0",
     "nodemon": "^2.0.6"
   }
 }
