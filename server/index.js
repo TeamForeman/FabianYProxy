@@ -4,7 +4,7 @@
 
 const server = require('./server.js');
 
-const PORT = 9898 || process.env.PORT;
+const PORT = 1111 || process.env.PORT;
 
 server.listen(PORT, () => {
   console.log(`Server running on localhost:${PORT}`);
